@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>여아현 포트폴리오</title>
+     <!-- 파비콘 -->
+     <link rel="shortcut icon" href="img/favicon.png">
+     <!-- jq 라이브러리 -->
+     <script src="js/jquery-3.6.4.js"></script>
+     <!-- 사용자 js -->
+     <script src="js/main.js"></script>
+     <!-- swiper js -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <!-- 사용자 css -->
+      <link rel="stylesheet" href="css/main.css" type="text/css">
+    
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+      <symbol id="wave">
+          <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+          <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+          <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+          <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+      </symbol>
+  </svg>
+
+  
+   
+    <div class="wrap">
+
+      <header>
+         <div class="logo"><a href="index.html" data-aos="fade">Welcome To Ahyeon's Portfolio</a></div>
+         <div class="header-inner">
+             <nav>
+               <ul>
+                 <li><a href="#info">Info</a></li>
+                 <li><a href="#project01">Project1</a></li>
+                 <li><a href="#project02">Project2</a></li>
+                 <li><a href="#project03">Project3</a></li>
+                 <li><a href="#art">Art work</a></li>
+                 <li><a href="#contact">Contact</a></li>
+               </ul>
+             </nav>
+         </div>
+       </header>
+
+      <section class="info" id="info">
+        <div class="info-box">
+          <div class="image" data-aos="zoom-in"></div>
+          <p class="info-top">현실에 안주하지 않고 <br> 발전을 즐기는 웹퍼블리셔 & 웹디자이너 <br> <span class="color"> 여아현</span> 입니다.</p>
+          <div class="info-txt">
+            <p class="age">1998. 09. 08</p>
+            <p class="mobile">010-9263-5690</p>
+            <p class="email">dudkgus156@naver.com</p>
+            <p class="edu">연희직업전문학교 <br> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.11~ 2023.02 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 센서를 활용한 스마트팩토리 이상 탐지 <br>
+               &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;SW개발자 양성</p>
+          </div>
+        </div>
+
+        <div class="info-mid"> 
+          <small>Web publisher & designer Yeo ahyeon</small>
+          <h1><a href="#" class="emoji-01"># 긍정적인</a> &nbsp;&nbsp;&nbsp;  <a href="#" class="emoji-02"># 꼼꼼한</a> &nbsp;&nbsp;&nbsp; <a href="#" class="emoji-03"># 발전가능성</a></h1>
+          <p>안녕하세요. 제 포트폴리오에 방문해 주셔서 감사합니다. <br> 
+            항상 긍정적인 모습으로 어려운 상황이 생겨도 <br> 차분하고 꼼꼼하게 해결해나가는
+            모습이 <br> 매력적인 웹퍼블리셔 & 웹디자이너 여아현입니다. <br>
+            배움이 빨라 신입이지만 경력 같은 모습을 보여드리겠습니다. <br>
+            발전 가능성이 무궁무진한 저에게 궁금하신 점이 있으시다면 <br>
+            언제든지 연락 주시기 바랍니다.   
+          </p>
+        </div>
+
+        <div class="info-right">
+         <h1>My Skill</h1>
+         <div class="skill">
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count1">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water1" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>HTML & CSS</p>
+            </div>
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count2">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water2" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>Ps</p>
+            </div>
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count3">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water3" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>Ai</p>
+            </div>
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count4">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water4" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>JQuery</p>
+            </div>
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count5">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water5" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>MySQL</p>
+            </div>
+            <div class="skill_box">
+               <div class="box">
+                  <div class="percent">
+                     <div class="percentNum" id="count6">0</div>
+                     <div class="percentB">%</div>
+                  </div>
+                  <div id="water6" class="water">
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                     <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                     </svg>
+                  </div>
+               </div>
+               <p>Gnuboard</p>
+            </div>
+         </div>
+        </div>
+        <span class="mouse"></span>
+      </section>  
+
+      <section class="project01 project" id="project01">
+         <div class="p01-inner p-inner">
+            <h1>Project1</h1>
+            <h2>Renewal Coding</h2>
+            <div class="container01 container">
+               <ul class="tab-title01 tab-title">
+                  <li class="on">공차</li>
+                  <li>라인프렌즈</li>
+               </ul>
+               <div class="tab-cont01 tab-cont">
+                     <div class="on">
+                        <div class="re-wrap p-wrap" data-aos="fade-right">
+                           <img src="img/wrap-gray.png" alt="imac">
+                           <div class="inner inner01">
+                              <img src="img/gongcha-full.png" alt="공차 리뉴얼 사이트">
+                           </div>
+                           <i class="i-p1">마우스를<br>올려보세요.</i>
+                        </div>
+                        <div class="re-txt txt" data-aos="fade-up">
+                           <div class="site-logo"></div>
+                           <p>貢茶는 바칠 공, 차 차의 뜻으로 중국 황실에서만 맛 볼 수 있던 프리미엄 퀄리티의 차(茶)를 <br>
+                              바친다는 의미를 지니고 있습니다. 대만은 차나무가 자라기에 최적의 기온과 기상조건을 가지고 있어 <br>
+                              중국의 황실에 최고급 차 잎을 생산해낼 수 있었습니다. <br>
+                              중국 황실에 진상하던 대만의 프리미엄 잎차를 신선하게 우려낸 차, 그것이 바로 공차랍니다.
+                              
+                              </p>
+                              <div class="learn">
+                                 <span><span class="color">공차</span>를 리뉴얼 하며 배운 점 
+                                 <br>
+                                 <br>
+                                 1. 배너, 로고 등 전체적인 디자인<br>
+                                 2. 호버시 border 그라데이션 효과 <br>
+                                 <br>
+                                 * 가장 처음 만든 페이지라 미숙하지만<br> 발전하는 과정을 지켜봐주시면 감사하겠습니다!
+                              </span>
+                              <div class="detail">
+                                 <h3><span class="color">기여도 : </span>100%</h3>
+                                 <h3><span class="color">제작 기간 : </span>5일</h3>
+                              </div>
+                              </div>
+                              <div class="btn-wrapper">
+                                 <a href="https://hyeonyyyyyy.github.io/gongcha/" target="_blank"><span>사이트 보러가기</span></a>
+                              </div>
+                        </div>
+                       
+                     </div>
+                     <div class="no01">
+                        <div class="re-wrap p-wrap" >
+                           <img src="img/wrap-gray.png" alt="imac">
+                           <div class="inner inner01">
+                              <img src="img/line-full.png" alt="라인프렌즈 리뉴얼 사이트">
+                           </div>
+                        </div>
+                        <div class="re-txt txt">
+                           <div class="site-logo"></div>
+                           <p>라인프렌즈는 ‘글로벌 크리에이티브 스튜디오’로서 <br>
+                              기존 리테일 분야를 넘어 넷플릭스, 텐센트, 빅히트와 같은 글로벌 파트너사들과 함께 <br>
+                              다양한 미디어·엔터테인먼트 콘텐츠를 선보이며 캐릭터 IP의 무궁무진한 가능성을 넓혀가고 있습니다.</p>
+                           <div class="learn">
+                              <span> <span class="color">라인프렌즈</span>를 리뉴얼 하며 배운 점
+                              <br>
+                              <br>
+                              1. 풀페이지 사용 <br>
+                              2. 영상 삽입 <br>
+                              3. 흘러가는 글자 효과(marquee) 사용 <br>
+                              4. 반응형 (모바일, 테블릿 버전) 제작
+                           </span>
+                           <div class="detail">
+                              <h3><span class="color">기여도 : </span>100%</h3>
+                              <h3><span class="color">제작 기간 : </span>6일</h3>
+                           </div>
+                           </div>
+                           <div class="btn-wrapper">
+                              <a href="https://hyeonyyyyyy.github.io/linefriends/" target="_blank"><span>사이트 보러가기</span></a>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="project02 project" id="project02">
+         <div class="p02-inner p-inner">
+            <h1>Project2</h1>
+            <h2>clone coding</h2>
+            <div class="container02 container">
+               <ul class="tab-title02 tab-title">
+                  <li class="on">구르메 F&B</li>
+                  <li>국민연금공단</li>
+                  <li>마이데이터</li>
+               </ul>
+               <div class="tab-cont02 tab-cont">
+                     <div class="on">
+                        <div class="clone-wrap p-wrap" data-aos="fade-left">
+                           <img src="img/wrap-blue.png" alt="imac">
+                           <div class="inner inner02">
+                              <img src="img/g-full.png" alt="구르메">
+                           </div>
+                           <i class="i-p2">마우스를<br>올려보세요.</i>
+                        </div>
+                        
+                        <div class="clone-txt txt" data-aos="fade-up">
+                           <div class="site-logo"></div>
+                           <p>구르메 F&B는 유럽의 건강한 식재료를 엄선하여 국내에 소개하는 European Food Curator 입니다. <br>
+                              구르메 F&B는 이제 유럽의 미식을 넘어 서양의 모든 미식을 향해 나아가려 합니다. <br>
+                              국내 Western Food Market Leader으로, 그 꽃을 더욱 활짝 피우겠습니다.</p>
+                              <div class="learn">
+                                 <span><span class="color">구르메</span>를 클론 코딩을 하며 배운 점 
+                                 <br>
+                                 <br>
+                                 1. top일 때 투명에서 스크롤시 컬러 변경되며 픽스되는 헤더 <br>
+                                 2. 백그라운드가 autoplay되며 사진 변경 (table 섹션) <br>
+                                 3. swiper 불렛 한글로 변경 
+                              </span>
+                              <div class="detail">
+                                 <h3><span class="color">기여도 : </span>100%</h3>
+                                 <h3><span class="color">제작 기간 : </span>5일</h3>
+                              </div>
+                              </div>
+                              <div class="btn-wrapper">
+                                 <a href="https://hyeonyyyyyy.github.io/gourmet/" target="_blank"><span>사이트 보러가기</span></a>
+                              </div>
+                        </div>
+                     </div>
+                     <div class="no01">
+                        <div class="clone-wrap p-wrap" >
+                           <img src="img/wrap-blue.png" alt="imac">
+                           <div class="inner inner02">
+                              <img src="img/nps-full.png" alt="국민연금공단">
+                           </div>
+                        </div>
+                        <div class="clone-txt txt">
+                           <div class="site-logo"></div>
+                           <p>국민연금 계산, 요율, 가입증명서 및 보험료 납부증명서 발급, 환수금 납부내역 조회 등 안내.</p>
+                           <div class="learn">
+                              <span> <span class="color">국민연금</span>을 클론 코딩을 하며 배운 점
+                              <br>
+                              <br>
+                              1. search 기능 삽입 <br>
+                              2. 탭메뉴, select, swiper, hover 효과 등을 보다 완벽하게 익힘 <br>
+                              3. swiper에서 autoplay stop 버튼(기능)
+                           </span>
+                           <div class="detail">
+                              <h3><span class="color">기여도 : </span>100%</h3>
+                              <h3><span class="color">제작 기간 : </span>4일</h3>
+                           </div>
+                           </div>
+                           <div class="btn-wrapper">
+                              <a href="https://hyeonyyyyyy.github.io/nps/" target="_blank"><span>사이트 보러가기</span></a>
+                           </div>
+                        </div>
+                  </div>
+                  <div class="no02">
+                     <div class="clone-wrap p-wrap">
+                     <img src="img/wrap-blue.png" alt="imac">
+                     <div class="inner inner01">
+                        <img src="img/my-full.png" alt="마이데이터">
+                     </div>
+                     </div>
+                     <div class="clone-txt txt">
+                        <div class="site-logo"></div>
+                        <p>마이데이터는 개인데이터의 관리와 활용 권한이 정보주체인 개인에게 있음을 강조하는, <br> 개인데이터 활용 체계의 새로운 패러다임입니다. </p>
+                        <div class="learn">
+                           <span><span class="color">마이데이터</span>를 클론 코딩을 하며 배운 점
+                           <br>
+                           <br>
+                           1. before, after 개념 완벽 이해 <br>
+                           2. 체험하기 섹션 swiper 전환되며 중앙 슬라이드 효과 주기 <br>
+                           3. swiper 이용시 페이지네이션 두가지 동시에 사용
+                        </span>
+                        <div class="detail">
+                           <h3><span class="color">기여도 : </span>100%</h3>
+                           <h3><span class="color">제작 기간 : </span>3일</h3>
+                        </div>
+                        </div>
+                           <div class="btn-wrapper">
+                           <a href="https://hyeonyyyyyy.github.io/mydata/" target="_blank"><span>사이트 보러가기</span></a>
+                        </div>
+                     </div>
+               </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="project03 project" id="project03">
+         <div class="p03-inner p-inner">
+            <h1>Project3</h1>
+            <h2>design & coding</h2>
+            <div class="container03 container">
+               <ul class="tab-title03 tab-title">
+                  <li class="on">cozy&fresh</li>
+                  <li>heonyverse</li>
+               </ul>
+               <div class="tab-cont03 tab-cont">
+                     <div class="on">
+                        <div class="design-wrap p-wrap" data-aos="fade-right">
+                           <img src="img/wrap-purple.png" alt="imac">
+                           <div class="inner inner03">
+                              <img src="img/cozy-full.png" alt="cozy&fresh">
+                           </div>
+                           <i class="i-p3">마우스를<br>올려보세요.</i>
+                        </div>
+                        <div class="design-txt txt" data-aos="fade-up">
+                           <div class="site-logo"></div>
+                           <p>‘포근한’이라는 뜻의 ‘cozy’와 ‘상쾌한’이라는 뜻의 ‘fresh’를 합쳐 <br>
+                              ‘COZY&FRESH’라는 브랜드명이 탄생하였습니다. <br>
+                              톤 다운된 핑크와 그린을 사용하여 포근한 느낌을 줌과 동시에
+                              불면증에 좋은 복숭아를 형상케 했으며 <br>
+                              모양으로는 침대에 놓여있는 베개와 이불을 표현했습니다.</p>
+                              <div class="learn">
+                                 <span><span class="color">COZY & FRESH</span>를 디자인 & 코딩을 하며 배운 점 
+                                 <br>
+                                 <br>
+                                 1. 브랜드 창작, 로고 & 전체적인 디자인 레이아웃 구성 <br>
+                                 2. data-aos 사용 <br>
+                                 3. 반응형 (모바일 버전) 제작
+                              </span>
+                              <div class="detail">
+                                 <h3><span class="color">기여도 : </span>100%</h3>
+                                 <h3><span class="color">제작 기간 : </span>5일</h3>
+                              </div>
+                              </div>
+                              <div class="btn-wrapper">
+                                 <a href="https://hyeonyyyyyy.github.io/cozyfresh/" target="_blank"><span>사이트 보러가기</span></a>
+                              </div>
+                        </div>
+                     </div>
+                     <div class="no01">
+                        <div class="clone-wrap p-wrap" >
+                           <img src="img/wrap-purple.png" alt="imac">
+                           <div class="inner inner02">
+                              <img src="img/heony-full.png" alt="heonyverse">
+                           </div>
+                        </div>
+                        <div class="design-txt txt">
+                           <div class="site-logo"></div>
+                           <p>'여아현'이라는 세상에 대해 설명한 사이트 입니다. <br>
+                              지인들이 해준 저라는 사람에 대한 객관적인 평가와 <br>
+                              그누보드를 이용한 게시판, 구글 폼을 이용한 이메일 보내는 기능이 담겨있습니다. 
+                           </p>
+                           <div class="learn">
+                              <span> <span class="color">heonyverse</span>를 디자인 & 코딩을 하며 배운 점
+                              <br>
+                              <br>
+                              1. 다양한 플러그인 사용 <br>
+                              2. 그누보드 사용 <br>
+                              3. 구글 폼을 이용한 이메일 보내기 기능 <br>
+                              4. 반응형 (모바일 버전) 제작
+                           </span>
+                           <div class="detail">
+                              <h3><span class="color">기여도 : </span>100%</h3>
+                              <h3><span class="color">제작 기간 : </span>4일</h3>
+                           </div>
+                           </div>
+                           <div class="btn-wrapper">
+                              <a href="http://hyeon0908.dothome.co.kr/#" target="_blank"><span>사이트 보러가기</span></a>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="art" id="art">
+         <div class="art-inner">
+               <h1>Art work</h1>
+               <div class="art-box"> 
+                  <ul>
+                     <li data-aos="flip-right"><img src="img/graphic_1.jpg" alt="그래픽1"></li>
+                     <li data-aos="flip-right"><img src="img/graphic_2.jpg" alt="그래픽2"></li>
+                     <li data-aos="flip-up"><img src="img/graphic_3_1.jpg" alt="그래픽3"></li>
+                     <li data-aos="flip-up"><img src="img/graphic_3_2.jpg" alt="그래픽4"></li>
+                     <li data-aos="flip-up"><img src="img/graphic_4.jpg" alt="그래픽5"></li>
+                     <li data-aos="flip-up"><img src="img/graphic_5.jpg" alt="그래픽6"></li>
+                     <li data-aos="flip-right"><img src="img/graphic_6.jpg" alt="그래픽7"></li>
+                     <li data-aos="flip-right"><img src="img/graphic_7.jpg" alt="그래픽8"></li>
+                  </ul>
+               </div>
+            <div class="popup-wrap">
+               <button class="closed"><span class="blind"></span></button>
+               <img src="img/graphic_1.jpg" alt="그래픽">
+            </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+         <div class="con-inner">
+            <h1>Contact</h1>
+            <span class="git" data-aos="fade"><a href="https://github.com/hyeonyyyyyy">git</a></span>
+            <span class="kakao" data-aos="fade"><a href="https://open.kakao.com/o/suO43Djf">kakao</a></span>
+            <span class="qr" data-aos="fade"><a href="https://open.kakao.com/o/suO43Djf">qr</a></span>
+            <div class="con-txt">
+               <p>이름 : 여아현</p>
+               <p class="phone">010-9263-5690</p>
+               <p class="email">dudkgus156@naver.com</p>
+            </div>
+            <div class="con-img">
+               <img src="img/con-img.png" alt="컨텍 이미지">
+            </div>
+         </div>
+         <div class="finish">
+            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+         </div>
+      </section>
+
+      <footer>
+         <p>Copyrightⓒ2023.yeoahyeon .All rights reserved.</p>
+         <br>
+           <p>본 사이트는 상업적 목적이 아닌 여아현 개인 포트폴리오 사이트로 제작되었습니다. <br>
+            일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p> 
+            <br>
+           <p>해당 사이트는 1920*1080해상도에 최적화 되었습니다.</p>
+       </footer>
+        <a id="top" href="#">
+         </a>
+    </div>
+    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script>
+         //웹 내려가는 이미지
+         var laptopsInner = document.querySelectorAll('.inner');
+ 
+         for (const laptopInner of laptopsInner) {
+         laptopInner.addEventListener('mouseover', (e) => {
+             var imageHeight = e.target.offsetHeight;
+             var laptopHeight = e.currentTarget.offsetHeight;
+             var scrollHeight = imageHeight-laptopHeight;
+             console.log(`${imageHeight} | ${laptopHeight} | ${scrollHeight}`);  
+             e.target.style.transform = "translate3d(0, -"+scrollHeight+"px, 0)";
+         });
+         laptopInner.addEventListener('mouseout', (e) => {
+             e.target.style.transform = "translate3d(0, 0, 0)";
+         });
+         }
+     </script>
+</body>
+</html>
